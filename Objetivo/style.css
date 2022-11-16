@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.container3 {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 3.125rem;
+    cursor: pointer;
+    margin: 1.875rem 0;
+}
+
+.menu-icon {
+    width: 1.563rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-inline: 1.875rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--azulescuro);
+    font-size: 0.875rem;
+}
+
+nav ul li a:hover {
+    color: #835dff;
+}
+
+button {
+    padding: 1rem;
+    color: #fff;
+    background-color: #58568C;
+    margin: 2rem;
+}
+
+h1 {
+    color: #562ae4;
+    text-align: center;
+}
+
+h2,
+h3 {
+    width: 200px;
+    color: #6232ff;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+}
+
+p {
+    width: 300px;
+    color: var(--azulescuro);
+}
+
+img {
+    margin: 2%;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    /* width: 14rem; */
+}
+
+.container p {
+    width: 400px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.but {
+    border-radius: 10%;
+}
+
+@media(max-width:550px){
+    .container3 h1 {
+        font-size: 2rem;
+    }
+    .container img {
+        width: 300px;
+        /* margin-left: 40px; */
+    }
+
+    .container2 p {
+        display: flex;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+}

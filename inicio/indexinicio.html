@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinicio.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <title>Bimo</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar" id="navStyle">
+            <img src="../images/conversando.png" class="logo">
+
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../Objetivo/index.html">Objetivos</a></li>
+                    <li><a href="../materiais/material.html">Materiais</a></li>
+                    <li><a href="../referências/indexref.html">Referências</a></li>
+                    <li><a href="../Sobre nós/sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <img src="../images/menu (1).png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h1> Bimo <br> TCC GPS </h1>
+                <h2>Tecnologia de ponta na hora!</h2>
+                <p>Inovador, surpreendente e maravilhoso!!</p>
+                <h3> Unasp 2022 </h3>
+                 <a href="https://flaviobabos.com.br/melhores-projetos-com-arduino/"><button type="button">Idéias TCC<img src="../images/arrow.png" alt=""></button></a>
+            </div>
+            <div class="col-2">
+                <img src="../images/computer-removebg-preview.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <a href="../Saiba Mais/index.html"><img src="../images/add.png"></a>
+                    <p><small>Saiba mais</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList")
+        menuList.style.height = "0px";
+        let openMenu = false;
+        var navMenu = document.getElementById("navStyle")
+
+        function togglemenu() {
+
+            if(openMenu === false)
+            {
+                menuList.style.height = "130px";
+                openMenu = true;
+                navMenu.style.background = "linear-gradient(#3718d3, #8567f7);" 
+            }
+            else if(openMenu === true)
+            {
+                menuList.style.height = "0px";
+                openMenu = false;
+            }
+        }
+    </script>
+</body>
+</html>

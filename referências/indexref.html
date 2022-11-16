@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleref.css">
+    <link rel="stylesheet" href="ref.js">
+    <title>Referências</title>
+</head>
+<body>
+
+    <div class="container3">
+        <div class="navbar" id="navStyle">
+            <img src="../images/conversando.png" class="logo">
+
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../Objetivo/index.html">Objetivos</a></li>
+                    <li><a href="../materiais/material.html">Materiais</a></li>
+                    <li><a href="../referências/indexref.html">Referências</a></li>
+                    <li><a href="../Sobre nós/sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <img src="../images/menu (1).png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    <div class="container">
+        <h1>Referências</h1>
+    <div class="row">
+        <div class="col">
+            <div class="feature-img">
+                <img src="imavid/vestibular-unasp.jpg" width="100%">
+                <img src="imavid/play.png" class="play-btn" onclick="playVideo('imavid/tcc.mp4')"> 
+            </div>
+        </div>
+        <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="imavid/chassii.jpg">
+                    <img src="imavid/play.png" class="play-btn"
+                    onclick="playVideo('imavid/chassi.mp4')">>
+                </div>
+                <p>Montagem do carrinho chassi clique  <strong><a href="https://www.filipeflop.com/blog/construa-seu-robo-que-desvia-de-obstaculos-com-arduino/">aqui</a></strong><br> para saber mais sobre a montagem.</p>
+            </div>
+        </div>
+
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="imavid/rec.jpg">
+                    <img src="imavid/play.png" class="play-btn" onclick="playVideo('imavid/modulo.mp4')">>
+                </div>
+                <p>Módulo de reconhecimento de voz, clique  <strong><a href="https://www.usinainfo.com.br/blog/projeto-reconhecimento-de-voz-arduino/">aqui</a></strong> para saber mais sobre a montagem.</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="imavid/sensorr.jpg">
+                    <img src="imavid/play.png" class="play-btn"onclick="playVideo('imavid/sensor.mp4')">>
+                </div>
+                <p>Sensor ultrassônico desviando de obstáculos  <strong><a href="https://www.filipeflop.com/blog/sensor-ultrassonico-hc-sr04-ao-arduino/">aqui</a></strong>  para saber mais sobre a montagem.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="imavid/tcc.mp4">
+            <!-- isso -->
+        </video>
+        <img src="imavid/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo() {
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+</body>
+</html>
